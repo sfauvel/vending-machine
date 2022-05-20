@@ -1,0 +1,51 @@
+= Doc as test with pytest
+:url-repo: https://github.com/sfauvel/doc_as_test_pytest
+
+This project provides tools to implements https://sfauvel.github.io/documentationtesting/[Doc as test] with Python and https://docs.pytest.org/[pytest].
+
+== Prerequisite
+
+=== With docker
+
+The script `docker/build_docker_image.sh` build the image that run tests.
+
+To run them, use the `run_pytest.sh` script giving him parameters to pass to pytest command.
+
+Example:
+----
+. run_pytest.sh -v
+----
+
+=== Without docker
+
+ifndef::env-github[]
+To execute examples in this project you need to install Python 
+and the libraries below:
+
+----
+include::docker/python_libs.txt[]
+----
+endif::[]
+ifdef::env-github[] 
+To execute examples in this project you need to install Python 
+and the libraries listed in 
+link:{url-repo}/blob/main/docker/python_libs.txt[python_libs.txt].
+endif::[]
+
+
+They can install them with `pip install` command.
+
+Versions are just those used in our environment but it should work with others.
+
+To run the tests, use the following command: 
+----
+pytest -v
+----
+
+== Usage
+
+The file `doc_as_test_pytest.py` encapsulate `Approvals` to call `verify` at the end of each test and to generate a document containing all test documents of the same file. 
+
+There is a test example with the file `test_demo_with_approvals.py`.
+Approved documents are on the `docs` folder.
+

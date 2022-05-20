@@ -1,0 +1,4 @@
+= Vending machine
+This file is an example of using doc as test with pytest.
+
+include:test_vending_machine.test_introduction.approved.adoc[leveloffset=+1]

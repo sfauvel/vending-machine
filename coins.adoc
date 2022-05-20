@@ -1,0 +1,15 @@
+
+
+:imagesdir: images
+
+= Coin values
+
+
+[cols="4*a"]
+|====
+| Penny   | 1 cent   | image::penny.png[width="75px"]     | 0.750
+| Nickel  | 5 cents  | image::nickel.png[width="85.5px"]  | 0.835
+| Dime    | 10 cents | image::dime.png[width="70.5px"]    | 0.705
+| Quarter | 25 cents | image::quarter.png[width="95.5px"] | 0.955
+|====
+
