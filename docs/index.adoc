@@ -1,0 +1,4 @@
+:toc: left
+:nofooter:
+
+include::test_vending_machine.approved.adoc[]

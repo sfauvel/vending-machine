@@ -20,3 +20,9 @@ run_on_docker "pytest $*"
 
 chmod a+x ./docker/chown_docs.sh
 run_on_docker "/project/docker/chown_docs.sh $(whoami) /project/docs"
+
+
+if [ 0 -eq $(ls docs/*received* | wc -l) ]
+then
+  mvn package
+fi

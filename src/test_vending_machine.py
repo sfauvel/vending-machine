@@ -1,5 +1,5 @@
 """
-This file is an example of using doc as test with pytest.
+Vending Machine Kata using doc as test.
 """
 import os
 import pytest
