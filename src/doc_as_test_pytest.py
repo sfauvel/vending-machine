@@ -128,7 +128,7 @@ class DocAsTestFunctionNamer(DocAsTestNamer):
     
     def get_file_name(self):
         class_name = "" if (self.ClassName is None) else (self.ClassName + ".")
-        return class_name + self.MethodName
+        return "_" + class_name + self.MethodName
 
 
 class DocAsTestModuleNamer(DocAsTestNamer):
